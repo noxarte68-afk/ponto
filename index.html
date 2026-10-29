@@ -204,7 +204,7 @@ function vRel(){
  return `<div class="card"><h2>Fechamento do mês</h2><div class="tw"><table><tr><th>Nome</th><th>Dias</th><th>Folgas</th><th>Falt. inj.</th><th>Previsto</th><th>Feito</th></tr>
  ${S.emps.map(e=>{const s=stat(e);return `<tr><td>${esc(e.nome)}</td><td>${s.dt}</td><td>${s.fl}</td><td class="${s.falt?"bad":""}">${s.falt}</td><td>${hm(s.prev)}</td><td>${hm(s.fz)}</td></tr>`}).join("")}</table></div></div>
  <div class="card"><h2>Mensagem</h2><pre>${esc(t)}</pre>
- <a href="https://wa.me/${ZAP}?text=${encodeURIComponent(t)}" target="_blank" rel="noopener"><button class="btn alt">Enviar para o WhatsApp (16) 98829-1300</button></a>
+ <a href="https://wa.me/${ZAP}?text=${encodeURIComponent(t)}" target="_blank" rel="noopener"><button class="btn alt">Enviar para o RH (16) 98829-1300</button></a>
  <p class="tag">O WhatsApp abre com a mensagem pronta; é só tocar em enviar.</p></div>`}
 $("mes").onchange=draw;window.addEventListener("hashchange",draw);draw();initDb();
 </script>
